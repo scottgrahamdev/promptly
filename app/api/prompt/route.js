@@ -11,7 +11,7 @@ export const GET = async (request) => {
             status: 200
         })
     } catch (error) {
-            console.error(error);
-            return new Response(JSON.stringify({ message: "Failed to fetch prompts" }), {status: 500});
-        }
+        console.error(error);
+        return new Response(JSON.stringify({ message: "Failed to fetch prompts" }), {status: 500});
+    }
 }
